@@ -1,0 +1,32 @@
+#services{
+   border: 0.5px solid $ColorGray;
+   padding: 40px 0px;
+    .services-text{
+        h2{
+            font-size: $MainFont*2;
+            margin: 8px 0px;
+        }
+        p{
+            font-size: $MainFont;
+            color: $ColorGray;
+            margin: 10px 0px;
+        }
+    }
+
+    .services-cards{
+        display: flex;
+        flex-wrap: wrap;
+
+        .col-3{
+            margin: 15px 0px;
+        h6{
+            font-size: $MainFont;
+        }
+        p{
+            font-size: $MainFont;
+            color: $ColorGray;
+            margin: 8px 0px;
+        }
+    }
+    }
+}

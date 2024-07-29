@@ -1,0 +1,28 @@
+#transporting {
+  background-image: url(/assets/images/airplane.jfif);
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+
+  .transporting-text {
+    padding: 100px 0px;
+    h2 {
+      color: $ColorWhite;
+      font-size: $MainFont * 3+4;
+    }
+  }
+
+  .search {
+    padding-top: 60px;
+    input {
+      width: 400px;
+      padding: 12px 16px;
+      font-size: $MainFont;
+      border-radius: 5px;
+      border: none;
+    }
+    .site-btn {
+      @include button;
+    }
+  }
+}

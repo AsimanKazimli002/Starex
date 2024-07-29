@@ -1,0 +1,27 @@
+#application{
+   
+    .app{
+        display: flex;
+        padding-top: 200px;
+        justify-content: center;
+       
+    .app-text{
+        width: 330px;
+        height: 160px;
+
+    h2{
+        font-size: $MainFont*2;
+    }
+    p{
+        font-size: $MainFont;
+        color: $ColorScorpion;
+        margin: 9px 0px;
+    }
+    img{
+        height: 40px;
+        width: 140px;
+        margin-right: 5px;
+    }
+}
+    }
+}

@@ -1,0 +1,35 @@
+#about-us{
+    background-color: rgb(245,245,245);
+
+    h2{
+        font-size: $MainFont*2;
+        margin-top: 100px;
+
+    }
+    p{
+        font-size: $MainFont;
+        color: $ColorGray;
+        margin: 18px 0px;
+    }
+    .values{
+        margin: 30px 10px 20px 0px;
+        display: flex;
+
+        .values-text{
+
+            h6{
+                font-size: $MainFont+4;
+                color: $ColorScorpion;
+            }
+            p{
+                font-size: $MainFont;
+                color: $ColorGray;
+            }
+        }
+    }
+    img{
+        background-size: cover;
+        height: 685px;
+    }
+    
+}

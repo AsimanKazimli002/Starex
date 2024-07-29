@@ -1,0 +1,68 @@
+#order {
+  padding: 70px 0px;
+  .order-text {
+    @include center;
+    padding: 15px 0px;
+    h2 {
+      font-size: $MainFont * 2;
+      display: block;
+
+    }
+  }
+  .order-p {
+    @include center;
+    padding-top: 20px 0px;
+    margin-bottom: 15px;
+    p {
+      font-size: $MainFont;
+      color: $ColorGray;
+    }
+  }
+  .box {
+    @include center;
+    .icons {
+      width: 80px;
+      height: 80px;
+      background-color: rgb(66, 116, 246);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 12px 0px;
+    }
+  }
+  h6 {
+    @include center;
+    font-size: $MainFont + 2;
+    margin: 15px 0px;
+  }
+  p {
+    display: flex;
+    text-align: center;
+    font-size: $MainFont;
+    color: $ColorGray;
+
+  }
+  .order-btn {
+    @include center;
+    .site-btn {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      @include button;
+    }
+  }
+}
+@media (max-width: 992px) and (min-width: 768px) {
+  
+  .container{
+    width: 100%;
+  }
+  
+}
+@media (max-width: 768px) and (min-width: 576px) {
+  .col-sm-2{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

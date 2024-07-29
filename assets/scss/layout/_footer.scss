@@ -1,0 +1,48 @@
+#footer {
+    background-color: $ColorWhiteSmoke;
+    padding: 40px 0px;
+  .site-logo {
+    @include flex;
+  }
+  path {
+    display: flex;
+  }
+  span {
+    font-size: 28px;
+    @include flex;
+    justify-content: center;
+    color: $ColorBlue;
+  }
+  img {
+    height: 30px;
+  }
+  .phone {
+    display: flex;
+    align-self: flex-end;
+    span {
+      display: inline;
+      color: $ColorScorpion;
+    }
+  }
+  .footer-lists{
+    h4{
+        font-size: $MainFont*2;
+        margin-bottom: 15px;
+        
+    }
+    ul{
+        list-style-type: none;
+        color: $ColorScorpion;
+        font-size: $MainFont;
+        li{
+            margin: 10px 0px;
+        }
+    }
+  }
+  .copyright{
+    border-top: 1px solid rgb(217,217,217);
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+}
+
