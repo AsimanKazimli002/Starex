@@ -1,21 +1,37 @@
+// utils folder
 @import './utils/variable';
 @import './utils/mixin';
+
+// layout folder
 @import './layout/header';
+@import './layout/usuallyhead';
+@import './layout/home-header';
+
+// pages folder
 @import './pages/transporting';
 @import './pages/order';
-@import './pages/services';
+@import './pages/delivery';
 @import './pages/about-us';
 @import './pages/calculator';
 @import './pages/news';
 @import './pages/application';
+
+// layout folder
 @import './layout/footer';
+
+// directory folder
+@import './directory/conditions';
+@import './directory/service';
+@import './directory/tariffs';
+@import './directory/news-dr';
+@import './directory/contact';
 
 *{
     margin: 0px;
     padding: 0px;
 }
 .container{
-    width: 1300px;
+    width: 100%;
     margin: 0 auto;
 
     .row{
@@ -23,36 +39,53 @@
         flex-wrap: wrap;
     }
 }
-@media (max-width: 1200px) and (min-width:992px){
-    .container{
 
-        width: 100%;
-    } 
-}
-@media (max-width:991px) and (min-width:768px){
-    .container{
-        width: 100%;
+@media (min-width:768px){
+    .col-md.contain, .container{
+        max-width: 720px;
     }
 }
+@media (min-width:992px){
+    .col-lg-contain, .col-md.contain, .container{
+        max-width: 960px;
+    }
+    .col-sm-2{
+        width: calc(100%/12*2);
+    }
+}
+@media (min-width:1400px){
+    .col-xxl-contain, .col-lg-contain, .col-md.contain, .container{
+        max-width: 1300px;
+    }
+}
+
+
 
 .col-2{
     width: calc(100%/12*2);
 }
-.col-sm-2{
-    width: calc(100%/12*2);
-  }
 .col-3{
     width: calc(100%/12*3);
 }
 .col-4{
     width: calc(100%/12*4);
 }
+.col-5{
+    width: calc(100%/12*5);
+}
 .col-6{
     width: calc(100%/12*6);
 }
+.col-8{
+    width: calc(100%/12*8);
+}
+.col-9{
+    width: calc(100%/12*9);
+}
 .col-10{
-    width: calc(100%/12*6);
+    width: calc(100%/12*10);
 }
 .col-12{
     width: calc(100%/12*12);
 }
+

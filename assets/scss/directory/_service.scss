@@ -1,0 +1,37 @@
+#usuallyhead{
+    padding: 20px 0px;
+    .declaration-btn{
+        @include declaration-btn($ColorLaughingOrange, $ColorLaughingOrange);
+    }
+}
+#services{
+    .services-text{
+        h2{
+            font-size: $MainFont*2;
+            margin: 10px 0px;
+        }
+        p{
+            font-size: $MainFont;
+            color: $ColorGray;
+            margin: 10px 0px;
+        }
+    }
+    
+.services-cards{
+    padding: 20px 0px;
+    display: flex;
+        flex-wrap: wrap;
+        .col-3{
+            margin: 15px 0px;
+        h6{
+            font-size: $MainFont;
+        }
+        p{
+            font-size: $MainFont;
+            color: $ColorGray;
+            margin: 10px 0px;
+        }
+}
+
+}
+}

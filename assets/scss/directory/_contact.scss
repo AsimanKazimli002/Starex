@@ -1,0 +1,48 @@
+#usuallyhead{
+    padding: 20px 0px;
+    .declaration-btn{
+        @include declaration-btn($ColorLaughingOrange, $ColorLaughingOrange);
+    }
+}
+#contact-us{
+    padding: 30px 0px;
+    .contact-text{
+        background-color: $ColorWhiteSmoke;
+        padding: 70px 0px;
+        text-align: center;
+        h1{
+            font-size: 32px;
+            color: $ColorMidnigthHour;
+        }
+    }
+}
+#contact-cards{
+    padding: 50px 0px;
+    .end{
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+        .cards-elements{
+            width: 400px;
+            display: flex;
+            font-size: $MainFont;
+            padding: 24px;
+            align-items: center;
+            border: 2px solid $ColorWhiteSmoke;
+            border-radius: 10px;
+            margin: 10px;
+            .icon-cards{
+                background-color: rgb(238,248,255);
+                color: $ColorBlue;
+                padding: 10px 12px;
+                border-radius: 50%;
+                margin-right: 8px;
+            }
+
+            .text-cards{
+                font-size: $MainFont;
+            }
+        }
+  
+}

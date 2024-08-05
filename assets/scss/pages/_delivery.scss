@@ -1,4 +1,4 @@
-#services{
+#delivery{
    border: 0.5px solid $ColorGray;
    padding: 40px 0px;
     .services-text{
@@ -16,7 +16,6 @@
     .services-cards{
         display: flex;
         flex-wrap: wrap;
-
         .col-3{
             margin: 15px 0px;
         h6{
@@ -28,5 +27,15 @@
             margin: 8px 0px;
         }
     }
+}
+@media (max-width: 992px) and (min-width: 576px) {
+  
+    .container{
+      width: 100%;
     }
+    
+  .none{
+    display: none;
+  }
+  }
 }

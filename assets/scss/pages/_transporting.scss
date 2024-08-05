@@ -8,7 +8,7 @@
     padding: 100px 0px;
     h2 {
       color: $ColorWhite;
-      font-size: $MainFont * 3+4;
+      font-size: $MainFont *3+4;
     }
   }
 
@@ -23,6 +23,17 @@
     }
     .site-btn {
       @include button;
+    }
+  }
+  @media (max-width: 964px) and (min-width: 500px) {
+    .transporting-text{
+      h2{
+        font-size: $MainFont+2*6;
+        color: $ColorBlack;
+      }
+    }
+    .search{
+      display: none;
     }
   }
 }

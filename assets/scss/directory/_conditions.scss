@@ -1,0 +1,32 @@
+#usuallyhead{
+    padding: 20px 0px;
+    .declaration-btn{
+        @include declaration-btn($ColorLaughingOrange, $ColorLaughingOrange);
+    }
+
+}
+#condition-text{
+
+    .relative{
+        position: relative;
+        font-size: $MainFont*4;    
+        color: $ColorBlue;
+    }
+    .absolute{
+        position: absolute;
+        color: $ColorMidnigth;
+        margin-top: -30px;
+        font-size: $MainFont*2;
+        margin-left: 30px;
+    }
+    .pg-text{ 
+        font-size: $MainFont+4;
+        margin-top: 60px;
+        padding-bottom: 4px;
+        span{
+            display: block;
+            margin: 3px 0px;
+        }
+        
+    }
+}

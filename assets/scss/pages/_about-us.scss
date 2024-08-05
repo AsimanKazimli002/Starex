@@ -1,35 +1,57 @@
-#about-us{
-    background-color: rgb(245,245,245);
+#about-us {
+  background-color: rgb(245, 245, 245);
 
-    h2{
-        font-size: $MainFont*2;
-        margin-top: 100px;
+  h2 {
+    font-size: $MainFont * 2;
+    margin-top: 100px;
+  }
+  p {
+    font-size: $MainFont;
+    color: $ColorGray;
+    margin: 18px 0px;
+  }
+  .values {
+    margin: 30px 10px 20px 0px;
+    display: flex;
 
-    }
-    p{
+    .values-text {
+      h6 {
+        font-size: $MainFont + 4;
+        color: $ColorScorpion;
+      }
+      p {
         font-size: $MainFont;
         color: $ColorGray;
-        margin: 18px 0px;
+      }
     }
-    .values{
-        margin: 30px 10px 20px 0px;
-        display: flex;
+  }
+  img {
+    height: 100%;
+  }
+// burada text şəkilin üzərine keçmir 
+  @media (max-width: 992px) and (min-width: 576px) {
+    .relative {
+      background-image: url(assets/images/about-cover.jpeg);
+      background-position: center;
+      background-size: contain;
+      width: 100%;
+      position: relative;
+      max-width: 700px;
 
-        .values-text{
+      img{
+        width: 100%;
+        height: auto;
+        display: block;
+      }
 
-            h6{
-                font-size: $MainFont+4;
-                color: $ColorScorpion;
-            }
-            p{
-                font-size: $MainFont;
-                color: $ColorGray;
-            }
-        }
-    }
-    img{
-        background-size: cover;
-        height: 685px;
+      .absolute {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+      }
     }
     
+  }
 }

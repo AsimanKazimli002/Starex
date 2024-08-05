@@ -1,14 +1,20 @@
 #calculator {
+  
   .package {
     background-color: $ColorWhiteSmoke;
-    width: 100%;
-    margin: 100px 260px;
-    padding: 20px;
+    width: 650px;
+    padding: 38px 38px 32px;
+    height: 400px;
+    margin-top: 5%;
+    margin-left: 24%;
+    
+   
 
     .calc-text{
         display: flex;
         justify-content: space-between;
         margin: 10px 0px;
+        width: 645px;
         
         h2{
             font-size: $MainFont*2;
@@ -23,21 +29,68 @@
     p{
         font-size: $MainFont;
         margin: 10px 0px;
+        width: 635px;
     }
 }
-    select {
-      width: 305px;
+    .calc-select{
+      
+      display: inline;
+      select{
+        width: 320px;
       @include calc;
+      height: 45px;
+      }
     }
-    input {
-      width: 290px;
+    .calc-input{
+    
+      display: inline;
+      input{
+      width: 306px;
       @include calc;
+      }
     }
     .site-btn {
       @include button;
       width: 303px;
-      margin: 0px 9px;
+      margin-right: 9px;
       border-radius: 5px;
     }
   }
+
+  @media (max-width: 992px) and (min-width: 576px) {
+  
+    
+  
+  .package{
+    width: 100%;
+    
+    .calc-select{
+      
+      display: inline;
+      select{
+        width: 300px ;
+      @include calc;
+      height: 45px;
+      }
+    }
+    .calc-input{
+    
+      display: inline;
+      input{
+      width: 300px;
+      @include calc;
+      }
+    }
+    .site-btn {
+      @include button;
+      width: 303px;
+      margin-right: 9px;
+      border-radius: 5px;
+      display: flex;
+    }
+
+  }
+  }
+
+  
 }

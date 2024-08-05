@@ -9,15 +9,26 @@
         }
     }
     .news-cards{
+        padding: 10px 0px;
+        width: 410px;
         h6{
             font-size: $MainFont+4;
             margin: 8px 0px;
         }
         img{
-            height: 216px;
+            height: 210px;
         }
         p{
             margin: 8px 0px;
         }
     }
+    @media (max-width: 992px) and (min-width: 576px) {
+  
+        #news{
+            margin-top: 100px;
+            .col-xxl-12{
+                width: calc(100%/12*12);
+            }
+        }
+      }
 }

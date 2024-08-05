@@ -1,11 +1,4 @@
-header {
-  padding: 30px 0px;
-  background-image: url(/assets/images/airplane.jfif);
-  background-size: cover;
-  background-position: top;
-  height: 97px;
-  border-bottom: 1px solid rgb(189, 187, 187);
-}
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 header .site-logo {
   display: flex;
   align-items: center;
@@ -18,6 +11,10 @@ header .site-logo span {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: black;
+}
+header .site-logo span a {
+  text-decoration: none;
 }
 header .site-list ul {
   display: flex;
@@ -31,6 +28,7 @@ header .site-list ul li a {
   text-decoration: none;
   color: black;
   font-size: 16px;
+  font-family: "roboto", sans-serif;
 }
 header .head-btn {
   display: flex;
@@ -43,39 +41,83 @@ header .head-btn .site-btn {
   border: 1px solid rgb(0, 90, 255);
   font-size: 16px;
   color: white;
+  cursor: pointer;
 }
-header .head-btn .declaration-btn {
+
+@media (max-width: 964px) and (min-width: 768px) {
+  .hidden-col {
+    display: none;
+  }
+  .declaration-btn {
+    display: none;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .flex {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 768px) and (min-width: 500px) {
+  .hidden-col {
+    display: none;
+  }
+  .declaration-btn {
+    display: none;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .flex {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+#usuallyhead {
+  padding: 20px 0px;
+}
+#usuallyhead span {
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 90, 255);
+}
+#usuallyhead .declaration-btn {
   padding: 10px 16px;
   background-color: transparent;
   border-radius: 4px;
-  border: 2px solid white;
+  border-width: 2px;
+  border-style: solid;
   font-size: 16px;
   margin-left: 8px;
+  cursor: pointer;
+  border-color: rgb(245, 158, 11);
+  color: rgb(245, 158, 11);
+}
+
+#homehead {
+  padding: 20px 0px;
+  background-image: url(/assets/images/airplane.jfif);
+  background-size: cover;
+  background-position: top;
+  height: 97px;
+  border-bottom: 1px solid rgb(189, 187, 187);
+}
+#homehead .declaration-btn {
+  padding: 10px 16px;
+  background-color: transparent;
+  border-radius: 4px;
+  border-width: 2px;
+  border-style: solid;
+  font-size: 16px;
+  margin-left: 8px;
+  cursor: pointer;
+  border-color: white;
   color: white;
 }
 
-@media (max-width: 992px) and (min-width: 768px) {
-  ul li {
-    display: none;
-  }
-  button {
-    display: none;
-  }
-  .site-btn {
-    display: none;
-  }
-}
-@media (max-width: 768px) and (min-width: 576px) {
-  ul li {
-    display: none;
-  }
-  button {
-    display: none;
-  }
-  .site-btn {
-    display: none;
-  }
-}
 #transporting {
   background-image: url(/assets/images/airplane.jfif);
   background-size: cover;
@@ -106,6 +148,16 @@ header .head-btn .declaration-btn {
   border: 1px solid rgb(0, 90, 255);
   font-size: 16px;
   color: white;
+  cursor: pointer;
+}
+@media (max-width: 964px) and (min-width: 500px) {
+  #transporting .transporting-text h2 {
+    font-size: 28px;
+    color: black;
+  }
+  #transporting .search {
+    display: none;
+  }
 }
 
 #order {
@@ -170,46 +222,55 @@ header .head-btn .declaration-btn {
   border: 1px solid rgb(0, 90, 255);
   font-size: 16px;
   color: white;
+  cursor: pointer;
 }
-
-@media (max-width: 992px) and (min-width: 768px) {
-  .container {
+@media (max-width: 992px) and (min-width: 576px) {
+  #order .container {
     width: 100%;
   }
-}
-@media (max-width: 768px) and (min-width: 576px) {
-  .col-sm-2 {
-    display: flex;
-    flex-wrap: wrap;
+  #order .col-md-6 {
+    width: 50%;
+  }
+  #order p {
+    display: none;
   }
 }
-#services {
+
+#delivery {
   border: 0.5px solid rgb(150, 150, 150);
   padding: 40px 0px;
 }
-#services .services-text h2 {
+#delivery .services-text h2 {
   font-size: 32px;
   margin: 8px 0px;
 }
-#services .services-text p {
+#delivery .services-text p {
   font-size: 16px;
   color: rgb(150, 150, 150);
   margin: 10px 0px;
 }
-#services .services-cards {
+#delivery .services-cards {
   display: flex;
   flex-wrap: wrap;
 }
-#services .services-cards .col-3 {
+#delivery .services-cards .col-3 {
   margin: 15px 0px;
 }
-#services .services-cards .col-3 h6 {
+#delivery .services-cards .col-3 h6 {
   font-size: 16px;
 }
-#services .services-cards .col-3 p {
+#delivery .services-cards .col-3 p {
   font-size: 16px;
   color: rgb(150, 150, 150);
   margin: 8px 0px;
+}
+@media (max-width: 992px) and (min-width: 576px) {
+  #delivery .container {
+    width: 100%;
+  }
+  #delivery .none {
+    display: none;
+  }
 }
 
 #about-us {
@@ -237,20 +298,44 @@ header .head-btn .declaration-btn {
   color: rgb(150, 150, 150);
 }
 #about-us img {
-  background-size: cover;
-  height: 685px;
+  height: 100%;
+}
+@media (max-width: 992px) and (min-width: 576px) {
+  #about-us .relative {
+    background-image: url(assets/images/about-cover.jpeg);
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    position: relative;
+    max-width: 700px;
+  }
+  #about-us .relative img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  #about-us .relative .absolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
 }
 
 #calculator .package {
   background-color: rgb(245, 245, 245);
-  width: 100%;
-  margin: 100px 260px;
-  padding: 20px;
+  width: 650px;
+  padding: 38px 38px 32px;
+  height: 400px;
+  margin-top: 5%;
+  margin-left: 24%;
 }
 #calculator .package .calc-text {
   display: flex;
   justify-content: space-between;
   margin: 10px 0px;
+  width: 645px;
 }
 #calculator .package .calc-text h2 {
   font-size: 32px;
@@ -263,19 +348,27 @@ header .head-btn .declaration-btn {
 #calculator .package .calc-p p {
   font-size: 16px;
   margin: 10px 0px;
+  width: 635px;
 }
-#calculator .package select {
-  width: 305px;
-  margin: 15px 9px;
+#calculator .package .calc-select {
+  display: inline;
+}
+#calculator .package .calc-select select {
+  width: 320px;
+  margin: 10px 2px 15px 0px;
   padding: 7px;
   height: 35px;
   border-radius: 5px;
   border: none;
   font-size: 16px;
+  height: 45px;
 }
-#calculator .package input {
-  width: 290px;
-  margin: 15px 9px;
+#calculator .package .calc-input {
+  display: inline;
+}
+#calculator .package .calc-input input {
+  width: 306px;
+  margin: 10px 2px 15px 0px;
   padding: 7px;
   height: 35px;
   border-radius: 5px;
@@ -289,9 +382,53 @@ header .head-btn .declaration-btn {
   border: 1px solid rgb(0, 90, 255);
   font-size: 16px;
   color: white;
+  cursor: pointer;
   width: 303px;
-  margin: 0px 9px;
+  margin-right: 9px;
   border-radius: 5px;
+}
+@media (max-width: 992px) and (min-width: 576px) {
+  #calculator .package {
+    width: 100%;
+  }
+  #calculator .package .calc-select {
+    display: inline;
+  }
+  #calculator .package .calc-select select {
+    width: 300px;
+    margin: 10px 2px 15px 0px;
+    padding: 7px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    height: 45px;
+  }
+  #calculator .package .calc-input {
+    display: inline;
+  }
+  #calculator .package .calc-input input {
+    width: 300px;
+    margin: 10px 2px 15px 0px;
+    padding: 7px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+  }
+  #calculator .package .site-btn {
+    padding: 11px 16px;
+    background-color: rgb(0, 90, 255);
+    border-radius: 4px;
+    border: 1px solid rgb(0, 90, 255);
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    width: 303px;
+    margin-right: 9px;
+    border-radius: 5px;
+    display: flex;
+  }
 }
 
 #news {
@@ -305,15 +442,27 @@ header .head-btn .declaration-btn {
 #news .news-text h2 {
   font-size: 32px;
 }
+#news .news-cards {
+  padding: 10px 0px;
+  width: 410px;
+}
 #news .news-cards h6 {
   font-size: 20px;
   margin: 8px 0px;
 }
 #news .news-cards img {
-  height: 216px;
+  height: 210px;
 }
 #news .news-cards p {
   margin: 8px 0px;
+}
+@media (max-width: 992px) and (min-width: 576px) {
+  #news #news {
+    margin-top: 100px;
+  }
+  #news #news .col-xxl-12 {
+    width: 100%;
+  }
 }
 
 #application .app {
@@ -386,13 +535,320 @@ header .head-btn .declaration-btn {
   padding-top: 20px;
 }
 
+#usuallyhead {
+  padding: 20px 0px;
+}
+#usuallyhead .declaration-btn {
+  padding: 10px 16px;
+  background-color: transparent;
+  border-radius: 4px;
+  border-width: 2px;
+  border-style: solid;
+  font-size: 16px;
+  margin-left: 8px;
+  cursor: pointer;
+  border-color: rgb(245, 158, 11);
+  color: rgb(245, 158, 11);
+}
+
+#condition-text .relative {
+  position: relative;
+  font-size: 64px;
+  color: rgb(0, 90, 255);
+}
+#condition-text .absolute {
+  position: absolute;
+  color: rgb(0, 48, 135);
+  margin-top: -30px;
+  font-size: 32px;
+  margin-left: 30px;
+}
+#condition-text .pg-text {
+  font-size: 20px;
+  margin-top: 60px;
+  padding-bottom: 4px;
+}
+#condition-text .pg-text span {
+  display: block;
+  margin: 3px 0px;
+}
+
+#usuallyhead {
+  padding: 20px 0px;
+}
+#usuallyhead .declaration-btn {
+  padding: 10px 16px;
+  background-color: transparent;
+  border-radius: 4px;
+  border-width: 2px;
+  border-style: solid;
+  font-size: 16px;
+  margin-left: 8px;
+  cursor: pointer;
+  border-color: rgb(245, 158, 11);
+  color: rgb(245, 158, 11);
+}
+
+#services .services-text h2 {
+  font-size: 32px;
+  margin: 10px 0px;
+}
+#services .services-text p {
+  font-size: 16px;
+  color: rgb(150, 150, 150);
+  margin: 10px 0px;
+}
+#services .services-cards {
+  padding: 20px 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#services .services-cards .col-3 {
+  margin: 15px 0px;
+}
+#services .services-cards .col-3 h6 {
+  font-size: 16px;
+}
+#services .services-cards .col-3 p {
+  font-size: 16px;
+  color: rgb(150, 150, 150);
+  margin: 10px 0px;
+}
+
+#usuallyhead {
+  padding: 20px 0px;
+}
+#usuallyhead .declaration-btn {
+  padding: 10px 16px;
+  background-color: transparent;
+  border-radius: 4px;
+  border-width: 2px;
+  border-style: solid;
+  font-size: 16px;
+  margin-left: 8px;
+  cursor: pointer;
+  border-color: rgb(245, 158, 11);
+  color: rgb(245, 158, 11);
+}
+
+#opportunity .col-radio {
+  display: flex;
+  padding: 30px 0px;
+  font-size: 16px;
+}
+#opportunity .img-relative {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
+  background-position: center;
+}
+#opportunity .img-relative img {
+  filter: contrast(20%);
+}
+#opportunity .img-relative .text-absolute {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#opportunity .img-relative .text-absolute h2 {
+  font-size: 32px;
+  color: white;
+}
+#opportunity .img-relative .text-absolute p {
+  font-size: 16px;
+  color: white;
+}
+#opportunity .img-relative .button-absolute {
+  display: flex;
+  padding: 20px 0px;
+  justify-content: center;
+}
+#opportunity .img-relative .button-absolute .flag-button {
+  display: flex;
+  align-items: center;
+  border: 1px solid white;
+  width: 100px;
+  background-color: transparent;
+  color: white;
+  border-radius: 7px;
+  margin: 0px 7px;
+  padding-left: 5px;
+}
+#opportunity .img-relative .button-absolute .flag-button:hover {
+  cursor: pointer;
+  background-color: rgb(0, 90, 255);
+  border: none;
+}
+
+#features {
+  padding: 20px 0px;
+  background-color: rgb(245, 245, 245);
+}
+#features .features-text {
+  margin: 10px;
+  padding: 15px 32px 32px;
+  font-size: 16px;
+  background-color: white;
+  border-radius: 6px;
+}
+#features .features-text .pd-bottom {
+  margin: 45px 0px;
+  display: inline-block;
+}
+#features .features-text p {
+  padding: 0px 10px 40px;
+}
+
+#calculator {
+  padding: 50px 0px;
+}
+#calculator .package {
+  background-color: rgb(245, 245, 245);
+  width: 650px;
+  padding: 38px 38px 25px;
+  height: 400px;
+  margin-left: 24%;
+}
+#calculator .package .calc-text {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+  width: 645px;
+}
+#calculator .package .calc-text h2 {
+  font-size: 32px;
+}
+#calculator .package .calc-text span {
+  font-size: 16px;
+  color: rgb(0, 90, 255);
+  align-self: center;
+}
+#calculator .package .calc-p p {
+  font-size: 16px;
+  margin: 10px 0px;
+  width: 635px;
+}
+#calculator .package .calc-select {
+  display: inline;
+}
+#calculator .package .calc-select select {
+  width: 320px;
+  margin: 10px 2px 15px 0px;
+  padding: 7px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  height: 45px;
+}
+#calculator .package .calc-input {
+  display: inline;
+}
+#calculator .package .calc-input input {
+  width: 306px;
+  margin: 10px 2px 15px 0px;
+  padding: 7px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+#calculator .package .site-btn {
+  padding: 11px 16px;
+  background-color: rgb(0, 90, 255);
+  border-radius: 4px;
+  border: 1px solid rgb(0, 90, 255);
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  width: 303px;
+  margin-right: 9px;
+  border-radius: 5px;
+}
+
+#usuallyhead {
+  padding: 20px 0px;
+}
+#usuallyhead .declaration-btn {
+  padding: 10px 16px;
+  background-color: transparent;
+  border-radius: 4px;
+  border-width: 2px;
+  border-style: solid;
+  font-size: 16px;
+  margin-left: 8px;
+  cursor: pointer;
+  border-color: rgb(245, 158, 11);
+  color: rgb(245, 158, 11);
+}
+
+#usuallyhead {
+  padding: 20px 0px;
+}
+#usuallyhead .declaration-btn {
+  padding: 10px 16px;
+  background-color: transparent;
+  border-radius: 4px;
+  border-width: 2px;
+  border-style: solid;
+  font-size: 16px;
+  margin-left: 8px;
+  cursor: pointer;
+  border-color: rgb(245, 158, 11);
+  color: rgb(245, 158, 11);
+}
+
+#contact-us {
+  padding: 30px 0px;
+}
+#contact-us .contact-text {
+  background-color: rgb(245, 245, 245);
+  padding: 70px 0px;
+  text-align: center;
+}
+#contact-us .contact-text h1 {
+  font-size: 32px;
+  color: rgb(57, 70, 78);
+}
+
+#contact-cards {
+  padding: 50px 0px;
+}
+#contact-cards .end {
+  display: flex;
+  justify-content: flex-end;
+}
+#contact-cards .cards-elements {
+  width: 400px;
+  display: flex;
+  font-size: 16px;
+  padding: 24px;
+  align-items: center;
+  border: 2px solid rgb(245, 245, 245);
+  border-radius: 10px;
+  margin: 10px;
+}
+#contact-cards .cards-elements .icon-cards {
+  background-color: rgb(238, 248, 255);
+  color: rgb(0, 90, 255);
+  padding: 10px 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+#contact-cards .cards-elements .text-cards {
+  font-size: 16px;
+}
+
 * {
   margin: 0px;
   padding: 0px;
 }
 
 .container {
-  width: 1300px;
+  width: 100%;
   margin: 0 auto;
 }
 .container .row {
@@ -400,21 +856,25 @@ header .head-btn .declaration-btn {
   flex-wrap: wrap;
 }
 
-@media (max-width: 1200px) and (min-width: 992px) {
-  .container {
-    width: 100%;
+@media (min-width: 768px) {
+  .col-md.contain, .container {
+    max-width: 720px;
   }
 }
-@media (max-width: 991px) and (min-width: 768px) {
-  .container {
-    width: 100%;
+@media (min-width: 992px) {
+  .col-lg-contain, .col-md.contain, .container {
+    max-width: 960px;
+  }
+  .col-sm-2 {
+    width: 16.6666666667%;
+  }
+}
+@media (min-width: 1400px) {
+  .col-xxl-contain, .col-lg-contain, .col-md.contain, .container {
+    max-width: 1300px;
   }
 }
 .col-2 {
-  width: 16.6666666667%;
-}
-
-.col-sm-2 {
   width: 16.6666666667%;
 }
 
@@ -426,12 +886,24 @@ header .head-btn .declaration-btn {
   width: 33.3333333333%;
 }
 
+.col-5 {
+  width: 41.6666666667%;
+}
+
 .col-6 {
   width: 50%;
 }
 
+.col-8 {
+  width: 66.6666666667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
 .col-10 {
-  width: 50%;
+  width: 83.3333333333%;
 }
 
 .col-12 {

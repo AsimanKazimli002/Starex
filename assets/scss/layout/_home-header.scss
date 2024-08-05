@@ -1,0 +1,7 @@
+#homehead {
+  @include back-img;
+  .declaration-btn {
+    @include declaration-btn($ColorWhite, $ColorWhite);
+  }
+  
+}

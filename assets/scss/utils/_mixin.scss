@@ -13,12 +13,42 @@
   border: 1px solid $ColorBlue;
   font-size: $MainFont;
   color: $ColorWhite;
+  cursor: pointer;
 }
 @mixin calc {
-  margin: 15px 9px;
+  margin: 10px 2px 15px 0px;
   padding: 7px;
   height: 35px;
   border-radius: 5px;
   border: none;
   font-size: $MainFont;
+  
+}
+@mixin declaration-btn($textcolor, $bordercolor) {
+  padding: 10px 16px;
+  background-color: transparent;
+  border-radius: 4px;
+  border-width: 2px;
+  border-style: solid;
+  font-size: $MainFont;
+  margin-left: 8px;
+  cursor: pointer;
+  border-color: $bordercolor;
+  color: $textcolor;
+}
+@mixin back-img {
+  padding: 20px 0px;
+  background-image: url(/assets/images/airplane.jfif);
+  background-size: cover;
+  background-position: top;
+  height: 97px;
+  border-bottom: 1px solid rgb(189, 187, 187);
+}
+@mixin span($textcolor) {
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $textcolor;
+
 }

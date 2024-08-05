@@ -1,0 +1,6 @@
+#usuallyhead{
+    padding: 20px 0px;
+    .declaration-btn{
+        @include declaration-btn($ColorLaughingOrange, $ColorLaughingOrange);
+    }
+}

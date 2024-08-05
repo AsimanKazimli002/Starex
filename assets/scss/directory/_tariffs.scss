@@ -1,0 +1,140 @@
+#usuallyhead {
+  padding: 20px 0px;
+  .declaration-btn {
+    @include declaration-btn($ColorLaughingOrange, $ColorLaughingOrange);
+  }
+}
+#opportunity {
+  .col-radio {
+    display: flex;
+    padding: 30px 0px;
+    font-size: $MainFont;
+  }
+
+  .img-relative {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    background-position: center;
+    img {
+      filter: contrast(20%);
+    }
+    .text-absolute {
+      position: absolute;
+      text-align: center;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      h2 {
+        font-size: $MainFont * 2;
+        color: $ColorWhite;
+      }
+      p {
+        font-size: $MainFont;
+        color: $ColorWhite;
+      }
+    }
+
+    .button-absolute{
+        display: flex;
+        padding: 20px 0px;
+        justify-content: center;
+    .flag-button{
+        display: flex;
+        align-items: center;
+      border: 1px solid $ColorWhite;
+      width: 100px;
+      background-color: transparent;
+      color: $ColorWhite;
+      border-radius: 7px;
+      margin: 0px 7px;
+      padding-left: 5px;
+
+      &:hover{
+        cursor: pointer;
+        background-color: $ColorBlue;
+        border: none;
+      }
+    }
+}
+  }
+}
+#features{
+  padding: 20px 0px;
+  background-color: $ColorWhiteSmoke;
+  .features-text{
+    margin: 10px;
+    padding:  15px 32px 32px;
+    font-size: $MainFont;
+    background-color: $ColorWhite;
+    border-radius: 6px;
+
+    .pd-bottom{
+      margin: 45px 0px;
+      display: inline-block;
+    }
+    p{
+      padding: 0px 10px 40px;
+    }
+
+  }
+}
+#calculator {
+  padding: 50px 0px;
+  .package {
+    background-color: $ColorWhiteSmoke;
+    width: 650px;
+    padding: 38px 38px 25px;
+    height: 400px;
+    margin-left: 24%;
+    
+   
+
+    .calc-text{
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0px;
+        width: 645px;
+        
+        h2{
+            font-size: $MainFont*2;
+        }
+        span{
+            font-size: $MainFont;
+            color: $ColorBlue;
+            align-self: center;
+        }
+}
+.calc-p{
+    p{
+        font-size: $MainFont;
+        margin: 10px 0px;
+        width: 635px;
+    }
+}
+    .calc-select{
+      
+      display: inline;
+      select{
+        width: 320px;
+      @include calc;
+      height: 45px;
+      }
+    }
+    .calc-input{
+    
+      display: inline;
+      input{
+      width: 306px;
+      @include calc;
+      }
+    }
+    .site-btn {
+      @include button;
+      width: 303px;
+      margin-right: 9px;
+      border-radius: 5px;
+    }
+  }
+}
